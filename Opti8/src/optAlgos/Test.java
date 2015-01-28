@@ -13,7 +13,7 @@ public class Test extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	final private int instanzen = 1; // Encore à faaaaaaaaaaaaaaire
-	final private static int rechtecke = 10;
+	final private static int rechtecke = 75;
 	final private static int minSeitenlänge = 10;
 	final private static int maxSeitenlänge = 120;
 
@@ -130,9 +130,9 @@ public class Test extends JPanel {
 
 			for (int i = 0; i < mengeRechtecke.size(); i++) {
 
-				//max = Math.max(max, Math.max(mengeRechtecke.get(i).getASeite(),mengeRechtecke.get(i).getWSeite()));
+				max = Math.max(max, Math.max(mengeRechtecke.get(i).getASeite(),mengeRechtecke.get(i).getWSeite()));
 				//Plusieurs choix à considérer pour trier les rectangles..pas vraiment de meilleure méthode je pense
-				max = mengeRechtecke.get(i).getFläche(); 
+				//max = mengeRechtecke.get(i).getFläche(); 
 				//max = mengeRechtecke.get(i).getPerimeter();
 				//max = mengeRechtecke.get(i).getFläche()/mengeRechtecke.get(i).getPerimeter();
 				//max = mengeRechtecke.get(i).getPerimeter()/mengeRechtecke.get(i).getFläche(); 
